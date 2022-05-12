@@ -22,7 +22,7 @@ void TK_Led5252_16x16::renderScanlinePart(int16_t scanline, int16_t xmin, int16_
     if(scanline == Led5252_16x16_HEIGHT -1){
       // Last line, send the data to screen
       flushFrame();
-      debug("Led5252_16x16", "Uart write done");
+      logDebug("Uart write done");
     }
 }
 
